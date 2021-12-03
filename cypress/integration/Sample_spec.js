@@ -1,6 +1,6 @@
 // start with npx cypress open
 
-describe('My First Test', () => {
+describe('Test with explain', () => {
     it('Does stuff on example cypress site ', () => {
         //visits the site provided
 
