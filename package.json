@@ -13,7 +13,7 @@
     "mochawesome-report-generator": "^6.0.1"
   },
   "scripts": {
-    "test": "npm start & cypress run --record --key ${{ secrets.CYPRESS_KEY }}",
+    "test": "npm start & cypress run",
     "build": "npm start",
     "start": "serve --listen ${PORT:-8080}",
     "cy:verify": "cypress verify",
