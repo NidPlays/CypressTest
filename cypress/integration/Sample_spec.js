@@ -13,7 +13,7 @@ describe('Test with explain', () => {
 
 
         //clicks the first element which has 'type' in its data
-        cy.contains('willfailforgithubci').click()
+        cy.contains('type').click()
         //assertion for url to include /commands/actions
         cy.url().should('include', '/commands/actions')
 
