@@ -7,7 +7,11 @@
     "cypress": "^9.1.0",
     "serve": "^13.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "4.1.0",
+    "mochawesome-report-generator": "^6.0.1"
+  },
   "scripts": {
     "test": "npm start & cypress run",
     "build": "npm start",
@@ -18,7 +22,9 @@
     "cy:cache:list": "cypress cache list",
     "cy:run": "cypress run",
     "cy:run:record": "cypress run --record",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
+    "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
   },
   "author": "",
   "license": "ISC"
