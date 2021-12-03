@@ -4,11 +4,21 @@
   "description": "test app",
   "main": "index.js",
   "dependencies": {
-    "cypress": "^9.1.0"
+    "cypress": "^9.1.0",
+    "serve": "^13.0.2"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm start & cypress run",
+    "build": "npm start",
+    "start": "serve --listen ${PORT:-8080}",
+    "cy:verify": "cypress verify",
+    "cy:info": "cypress info",
+    "cy:version": "cypress version",
+    "cy:cache:list": "cypress cache list",
+    "cy:run": "cypress run",
+    "cy:run:record": "cypress run --record",
+    "cy:open": "cypress open"
   },
   "author": "",
   "license": "ISC"
