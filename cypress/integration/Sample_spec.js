@@ -103,7 +103,7 @@ describe('Test with explain', () => {
 
         cy.get('.action-radios [type="radio"]')
             .check('radio2', { force: true }).should('be.checked')
-            //.check('radio2', { force: true }).should('be.checked')
+            //.check('radio1', { force: true }).should('be.checked')
 
     })
 })
