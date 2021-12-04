@@ -75,13 +75,13 @@ describe('Test with explain', () => {
             .click(80, 120)
             .click(80, 100)
 
-        // // click multiple elements by passing multiple: true
-        // //cy.get('.action-labels>.label').click({ multiple: true })
-        //
-        // // Ignore error checking prior to clicking
-        // cy.get('.action-opacity>.btn').click({ force: true })
-        //
-        //
+        // click multiple elements by passing multiple: true
+        cy.get('.action-labels>.label').click({ multiple: true })
+
+        // Ignore error checking prior to clicking
+        cy.get('.action-opacity>.btn').click({ force: true })
+
+
         //checking form boxes
         cy.get('.action-checkboxes [type="checkbox"]').not('[disabled]')
             .check().should('be.checked')

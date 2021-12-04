@@ -13,7 +13,7 @@ describe('Login Page Fail', () => {
 
         //cy.wait(1000*4)
 
-        cy.get('#spanMessage')
+        cy.get('#divLoginButton')
             .contains('password', {ignoreCase: true})
 
 
