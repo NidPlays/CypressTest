@@ -29,7 +29,7 @@ describe('Users from API', () => {
             cy.get('.ng-trigger')
                 .contains('Error')
                 .then(($err) => {
-                    console.log($err.text())
+                    console.log(user.email + ' has' +$err.text())
                     cy.get('.toast-message')
                         .then(($error) => {
                             console.log($error.text())
