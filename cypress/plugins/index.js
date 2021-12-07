@@ -1,22 +1,28 @@
-/// <reference types="cypress" />
-// ***********************************************************
-// This example plugins/index.js can be used to load plugins
-//
-// You can change the location of this file or turn off loading
-// the plugins file with the 'pluginsFile' configuration option.
-//
-// You can read more here:
-// https://on.cypress.io/plugins-guide
-// ***********************************************************
+/* eslint-disable no-console */
+const got = require('got')
+// Cypress tests in the 'integration' folder have access to
+// the Cypress object and the bundled Cypress._ Lodash
+// The plugin file does NOT have Cypress object
+// and thus has to import any 3rd party libraries
+const _ = require('lodash')
 
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
+module.exports = async (on, config) => {
+    // when we load the plugins file, let's fetch the list of users
+    const users = await got('http://localhost:3000/users').json()
 
-/**
- * @type {Cypress.PluginConfig}
- */
-// eslint-disable-next-line no-unused-vars
-module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
+    // we are only interested in the username and ID fields
+    const userInfo = _.map(users,
+        (user) => _.pick(user, ['id', 'email', 'password']))
+
+    console.log('Fetched the following users for testing')
+    console.table(userInfo)
+
+    // then set it inside the config object under the environment
+    // which will make it available via Cypress.env("users")
+    // before the start of the tests
+    config.env.users = userInfo
+
+    return config
 }
