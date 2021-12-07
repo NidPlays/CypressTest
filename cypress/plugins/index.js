@@ -13,16 +13,14 @@ module.exports = async (on, config) => {
     const users = await got('http://localhost:3000/users').json()
 
     // we are only interested in the username and ID fields
-    const userInfo = _.map(users,
-        (user) => _.pick(user, ['id', 'email', 'password']))
-
-    console.log('Fetched the following users for testing')
-    console.table(userInfo)
+    //console.log('Fetched the following users for testing')
+    //console.table(userInfo)
 
     // then set it inside the config object under the environment
     // which will make it available via Cypress.env("users")
     // before the start of the tests
-    config.env.users = userInfo
+    config.env.users = _.map(users,
+        (user) => _.pick(user, ['id', 'email', 'password']))
 
     return config
 }

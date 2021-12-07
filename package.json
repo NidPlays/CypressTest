@@ -22,7 +22,6 @@
   "scripts": {
     "test": "npm start & cypress run",
     "build": "npm start",
-    "start": "serve --listen ${PORT:-8080}",
     "cy:verify": "cypress verify",
     "cy:info": "cypress info",
     "cy:version": "cypress version",
@@ -31,7 +30,8 @@
     "cy:run:record": "cypress run --record",
     "cy:open": "cypress open",
     "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
-    "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
+    "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html",
+    "start": "json-server --watch ./databases/db.json"
   },
   "author": "",
   "license": "ISC"
