@@ -33,6 +33,7 @@ describe('Users from API', () => {
                     cy.get('.toast-message')
                         .then(($error) => {
                             console.log($error.text())
+
                         })
                 })
 
