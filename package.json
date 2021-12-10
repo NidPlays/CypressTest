@@ -6,11 +6,11 @@
   "dependencies": {
     "cypress": "^9.1.1",
     "got": "^11.8.3",
+    "json-server": "^0.17.0",
     "lodash": "^4.17.21",
     "neat-csv": "^7.0.0",
     "papaparse": "^5.3.1",
-    "serve": "^13.0.2",
-    "json-server": "^0.17.0"
+    "serve": "^13.0.2"
   },
   "devDependencies": {
     "fs": "0.0.1-security",
@@ -34,5 +34,13 @@
     "start": "json-server --watch ./databases/db.json"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NidPlays/CypressTest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NidPlays/CypressTest/issues"
+  },
+  "homepage": "https://github.com/NidPlays/CypressTest#readme"
 }
