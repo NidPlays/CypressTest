@@ -1,15 +1,22 @@
-{
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" },
-  "users": [
-    { "id": 1, "email":  "user1@gmail.com", "password":  "password1"},
-    { "id": 2, "email":  "user2@gmail.com", "password":  "password2"},
-    { "id": 3, "email":  "user3@gmail.com", "password":  "password3"},
-    { "id": 4, "email":  "user4@gmail.com", "password":  "password4"}
+[
+    {
+        "id": "1",
+        "email": "usr1@gmail.com",
+        "password": "password1@1"
+    },
+    {
+        "id": "2",
+        "email": "usr2@gmail.com",
+        "password": "password2@2"
+    },
+    {
+        "id": "3",
+        "email": "usr3@gmailcom",
+        "password": "password3@3"
+    },
+    {
+        "id": "4",
+        "email": "usr4@gmail.com",
+        "password": "password4@3"
+    }
 ]
-}

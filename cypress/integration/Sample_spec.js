@@ -7,7 +7,7 @@ describe('Test with explain', () => {
         cy.visit('https://example.cypress.io')
 
         cy.pause()
-        //
+
 
         //open selector playground to get elements with their ids etc
 

@@ -1,4 +1,6 @@
 const users = Cypress.env('users')
+
+
 //console.table(users)
 describe('Users from API', () => {
     before(() => {
