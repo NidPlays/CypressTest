@@ -20,7 +20,7 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "test": "npm start & cypress run & convertCSVtoJ",
+    "test": "npm start & cypress run & convertCSVtoJSON",
     "build": "npm start",
     "cy:verify": "cypress verify",
     "cy:info": "cypress info",
@@ -31,7 +31,7 @@
     "cy:open": "cypress open",
     "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
     "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html",
-    "start": "json-server --watch ./databases/db.json",
+    "start": "json-server --watch ./databases/db-api.json",
     "convertCSVtoJSON": "node ./databases/CSVtoJSON.mjs"
   },
   "author": "",

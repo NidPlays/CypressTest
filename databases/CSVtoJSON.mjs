@@ -9,7 +9,7 @@ try {
         complete: csvData => csvData.data
     }).data;
     writeFileSync(
-        "./databases/db.json",
+        "./databases/db-csv.json",
         JSON.stringify(csvResults, null, 4),
         "utf-8"
     );
