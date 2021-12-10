@@ -20,7 +20,7 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "test": "npm start & cypress run & convertCSVtoJSON",
+    "test": "npm start & cypress run & npm convertCSVtoJSON",
     "build": "npm start",
     "cy:verify": "cypress verify",
     "cy:info": "cypress info",
