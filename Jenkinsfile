@@ -20,7 +20,7 @@ pipeline{
                 bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
             }
         }
-        stage('Deplying'){
+        stage('Deploying'){
             steps{
             echo "Deploy Pipeline"
             }
