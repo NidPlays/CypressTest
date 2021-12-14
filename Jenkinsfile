@@ -17,6 +17,7 @@ pipeline{
         stage('Testing'){
             steps{
                 bat "npm i"
+                bat "npm run convertCSVtoJSON"
                 bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
             }
         }
