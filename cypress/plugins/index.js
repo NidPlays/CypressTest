@@ -12,7 +12,7 @@ module.exports = async (on, config) => {
     // when we load the plugins file, let's fetch the list of users
     const users = await got('http://localhost:3000/users').json()
 
-    // we are only interested in the username and ID fields
+    // we are only interested in the username and ID field and Password
     //console.log('Fetched the following users for testing')
     //console.table(userInfo)
 
