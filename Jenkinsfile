@@ -16,10 +16,11 @@ pipeline{
     }
         stage('Testing'){
             steps{
-                bat "npm i"
-                bat "npm start"
-                bat "npm run convertCSVtoJSON"
+                bat "npm ci"
+                //bat "npm start"
+                //bat "npm run convertCSVtoJSON"
                 bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
+                //bat "npx cypress run"
             }
         }
         stage('Deploying'){
