@@ -2,13 +2,9 @@
 
 This repo is for my cypress testing.
 
-Project 1: Create dynamic data driven automated regression test script using Cypress for WholeSoft Market signup screen
+Project 1: Create dynamic data driven automated regression test script using Cypress for WholeSoft Market signup screen.
 
-- [x] Data should be picked up from external csv file (Not Fully)
-- [x] Prep of pre-requisite data using API calls
-- [x] Chaining of scripts
-- [x] Integration with CI/CD pipeline using Jenkins
-- [x] Report on test coverage
+<a href="https://github.com/NidPlays/CypressTest/projects/1#card-74744377">Project Card Progress</a>
 
 Below Screenshot shows the CI/CD Jenkins Pipeline Build and Output.
 <img src="./pictures/jenkins-pass.png" alt="">
