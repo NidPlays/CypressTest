@@ -6,7 +6,7 @@ describe('Test with explain', () => {
 
         cy.visit('https://example.cypress.io')
 
-        cy.pause()
+        //cy.pause()
 
 
         //open selector playground to get elements with their ids etc
@@ -54,7 +54,7 @@ describe('Test with explain', () => {
         // cy.get('#action-canvas').click('bottom')
         // cy.get('#action-canvas').click('bottomRight')
 
-        // .click() accepts a an x and y coordinate
+        // .click() accepts an x and y coordinate
         // that controls where the click occurs
         cy.get('#action-canvas')
             .click(40, 180)

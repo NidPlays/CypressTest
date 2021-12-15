@@ -9,7 +9,7 @@ describe('Users from API', () => {
     })
 
     beforeEach(() => {
-        cy.visit('https://platform.wholesoftmarket.com/login')
+        cy.visit('https://dev.wholesoftmarket.com/login')
     })
 
     users.forEach((user) => {

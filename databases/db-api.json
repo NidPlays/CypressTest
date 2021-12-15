@@ -17,9 +17,9 @@
     "name": "typicode"
   },
   "users": [
-    { "id": 1, "email":  "user1@gmail.com", "password":  "password1"},
-    { "id": 2, "email":  "user2@gmail.com", "password":  "password2"},
-    { "id": 3, "email":  "user3@gmail.com", "password":  "password3"},
-    { "id": 4, "email":  "user4@gmail.com", "password":  "password4"}
+    { "id": 1, "firstn": "First1", "lastn":  "Last1" , "email":  "user1gmail.com", "password":  "password1"},
+    { "id": 2, "firstn": "First2", "lastn":  "Last2" , "email":  "user2gmail.com", "password":  "password2"},
+    { "id": 3, "firstn": "First3", "lastn":  "Last3" , "email":  "user3@gmail.com", "password":  ""},
+    { "id": 4, "firstn": "First4", "lastn":  "Last4" , "email":  "", "password":  "password4"}
   ]
 }
