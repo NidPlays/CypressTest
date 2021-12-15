@@ -1,6 +1,14 @@
 <h1> Cypress Testing Suite </h1>
 
-This repo is for my cypress testing.
+This repo is for cypress testing (Internship)
+
+Instructions to run the project
+-
+* Clone this repo.
+* Install cypress and other dependencies.
+* cd to ./databases and run **json-server --watch db-api.json**.
+* in another terminal go to root dir and run  **npx cypress open**.
+* Start testing in the Cypress GUI.
 
 Project 1: Create dynamic data driven automated regression test script using Cypress for WholeSoft Market signup screen.
 
