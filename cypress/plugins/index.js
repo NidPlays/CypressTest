@@ -20,7 +20,7 @@ module.exports = async (on, config) => {
     // which will make it available via Cypress.env("users")
     // before the start of the tests
     config.env.users = _.map(users,
-        (user) => _.pick(user, ['id', 'email', 'password']))
+        (user) => _.pick(user, ['id','firstn','lastn', 'email', 'password']))
 
     return config
 }

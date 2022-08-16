@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from "fs";
 import pgk from 'papaparse';
 const { parse } = pgk;
-
+//convert csv to json using javascript
 try {
     const csvFile = readFileSync("./databases/testData.csv", "utf8");
     const csvResults = parse(csvFile, {
